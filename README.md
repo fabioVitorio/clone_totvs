@@ -1,5 +1,5 @@
-# Clone da Totvs
-Clone do site totvs.com com o intuito de aprendizagem
+# Clone da Totvs <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/>
+Clone responsivo do site totvs.com com o intuito de aprendizagem
 ##
 ![totvs](https://user-images.githubusercontent.com/109548564/196009432-5d42c84d-efec-44e0-a1e9-d343dc1a5056.PNG)
 ##
