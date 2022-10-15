@@ -1,0 +1,465 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------- RESPONSIVIDADE DESKTOP ----------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 1200px){
+    /* header */
+    #logo{
+        border: 0px solid #000;
+        width: 150px;
+        height: 45px;
+        background-image: url(img/logo.png);
+        background-size: 150px 45px;
+        margin: 20px 0px 0 10%;
+        float: left;
+    }
+
+    #ul{
+        border: 0px solid #000;
+        width: 420px;
+        height: 20px;
+        margin: 0 auto;
+        margin-top: 35px;
+        padding: 0;
+    }
+    
+    li{
+        font-size: 11pt;
+        margin: 0 0 0 20px;
+    }
+
+    #a{
+        margin-left: 20px;
+    }
+
+    #btnHeader{
+        margin: 30px 100px 0 0px;
+    }
+
+    /* seção 1 */
+    #secMain1{
+        margin-left: 6%;
+    }
+
+    /* seção 2 */
+    #mainSeção2{
+        height: 750px;
+    }
+    
+}
+
+@media (max-width: 900px){
+    /* header */
+    #logo{
+        width: 120px;
+        height: 35px;
+        background-image: url(img/logo.png);
+        background-size: 120px 35px;
+        margin: 30px 0px 0 8%;
+        float: left;
+    }
+
+    #ul{
+        border: 0px solid #000;
+        width: 350px;
+        height: 20px;
+        margin: 0 auto;
+        margin-top: 35px;
+        padding: 0;
+    }
+    
+    li{
+        font-size: 11pt;
+        margin: 0 0 0 10px;
+    }
+
+    #a{
+        margin-left: 10px;
+    }
+
+    #btnHeader{
+        margin: 30px 55px 0 0px;
+    }
+
+    /* seção 1 */
+    #secMain1{
+        margin-left: 4%;
+    }
+
+    #titulo1{
+        width: 510px;
+        font-size: 23pt;
+    }
+    
+    #p1{
+        width: 500px;
+        font-size: 13pt;
+    }
+
+    /* seção 2 */
+    #mainSeção2{
+        height: 750px;
+    }
+
+    #artSeção2{
+        width: 86%;
+    }
+
+    /* footer */
+    footer{
+        height: 160px;
+    }
+    
+    #logoFooter{
+        border: 0px solid #fff;
+        width: 120px;
+        height: 40px;
+        background-image: url(img/logo.png);
+        background-size: 120px 40px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    #secIcons{
+        width: 40px;
+    }
+    
+    .icons{
+        width: 15px;
+    }
+    
+    #copy{
+        margin-top: 20px;
+        font-size: 10pt;
+    }
+    
+}
+
+@media (max-width: 765px){
+    /* header */
+    header{
+        border: 0px solid #000;
+        width: 100%;
+        height: 100px;
+        display:block;
+        position: fixed;
+        top: 0;
+    }
+
+    #logo{
+        width: 120px;
+        height: 35px;
+        background-image: url(img/logo.png);
+        background-size: 120px 35px;
+        margin: 30px 0px 0 7%;
+        float: left;
+    }
+
+    #ul{
+        display: none;
+    }
+
+    #toggle {
+        display: block; /* aqui*/
+        width: 28px;
+        height: 30px;
+        margin: 40px 0 0 80%;
+        position: relative;
+    }
+
+    #menu {
+        display: block; /* aqui*/
+        position: relative;
+        float: right;
+        color: #999;
+        width: 200px;
+        height: 170px;
+        padding: 10px;
+        margin: 30px 30px 0 0 ;
+        padding: 0;
+        font-family: "Segoe UI", Candara, "Bitstream Vera Sans";
+        text-align: center;
+        border-radius: 4px;
+        background: rgb(221, 221, 221);
+        box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    #ulMenu, .liMenu, .a {
+        list-style: none;
+        display: block; /* aqui*/
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    #btnHeader{
+        margin: 30px 0px 0 15%;
+        float: left;
+    }
+
+    /* seção 1 */
+    #mainSeção1{
+        width: 100%;
+    }
+
+    #secMain1{
+        margin-left: 3%;
+    }
+
+    #titulo1{
+        width: 450px;
+        font-size: 23pt;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 450px;
+        font-size: 13pt;
+    }
+
+    /* seção 2 */
+    #mainSeção2{
+        height: 1500px;
+    }
+
+    #artSeção2{
+        width: 86%;
+    }
+
+    /* seção 4 */
+    #mainSeção4{
+        height: 800px; 
+    }
+
+    /* footer */
+    footer{
+        height: 140px;
+    }
+    
+    #logoFooter{
+        margin-top: 20px;
+    }
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------- RESPONSIVIDADE MOBILE -----------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 710px){
+    /* header */
+    header{
+        border: 0px solid #000;
+        width: 100%;
+        height: 100px;
+        display:block;
+        position: fixed;
+        top: 0;
+    }
+
+    #logo{
+        width: 120px;
+        height: 35px;
+        background-image: url(img/logo.png);
+        background-size: 120px 35px;
+        margin: 30px 0px 0 5%;
+        float: left;
+    }
+
+    #ul{
+        display: none;
+    }
+
+    #toggle {
+        display: block; /* aqui*/
+        width: 28px;
+        height: 30px;
+        margin: 40px 0 0 85%;
+        position: relative;
+    }
+    
+
+    #btnHeader{
+        margin: 30px 0px 0 18%;
+        float: left;
+    }
+
+    /* seção 1 */
+    #mainSeção1{
+        width: 80%;
+    }
+
+    #secMain1{
+        width: 400px;
+        margin-left: 0 auto;
+        text-align: center;
+    }
+
+    #titulo1{
+        width: 450px;
+        font-size: 23pt;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 450px;
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 545px){
+    /* header */
+    header{
+        border: 0px solid #000;
+        width: 100%;
+        height: 100px;
+        display:block;
+        position: fixed;
+        top: 0;
+    }
+
+    #logo{
+        width: 110px;
+        height: 30px;
+        background-image: url(img/logo.png);
+        background-size: 110px 30px;
+        margin: 30px 0px 0 2%;
+        float: left;
+    }
+
+    #ul{
+        display: none;
+    }
+
+    #toggle {
+        display: block; /* aqui*/
+        width: 28px;
+        height: 30px;
+        margin: 40px 0 0 85%;
+        position: relative;
+    }
+    
+
+    #btnHeader{
+        margin: 30px 0px 0 15%;
+        float: left;
+    }
+
+    /* seção 1 */
+    #mainSeção1{
+        width: 100%;
+    }
+
+    #secMain1{
+        width: 400px;
+        margin-left: 0 auto;
+        text-align: center;
+    }
+
+    #titulo1{
+        width: 400px;
+        font-size: 21pt;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 370px;
+        font-size: 11pt;
+    }
+}
+
+
+@media (max-width: 413px){
+    /* header */
+    header{
+        border: 0px solid #000;
+        width: 100%;
+        height: 100px;
+        display:block;
+        position: fixed;
+        top: 0;
+    }
+
+    #logo{
+        width: 110px;
+        height: 30px;
+        background-image: url(img/logo.png);
+        background-size: 110px 30px;
+        margin: 30px 0px 0 2%;
+        float: left;
+    }
+
+    #ul{
+        display: none;
+    }
+
+    #toggle {
+        display: block; /* aqui*/
+        width: 28px;
+        height: 30px;
+        margin: 40px 0 0 85%;
+        position: relative;
+    }
+    
+
+    #btnHeader{
+        margin: 30px 0px 0 10%;
+        float: left;
+        width: 100px;
+        height: 25px;
+        font-size: 9pt;
+    }
+
+    /* seção 1 */
+    #mainSeção1{
+        width: 100%;
+        height: 600px;
+    }
+
+    #secMain1{
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #titulo1{
+        width: 350px;
+        font-size: 19pt;
+        text-align: center;
+    }
+    
+    #p1{
+        width: 350px;
+        font-size: 10pt;
+    }
+
+    #secSeta{
+        margin-top: 30px;
+    }
+}
+/* RESPONSIVIDADE TELA GRANDE */
+@media (min-width: 1366px){
+    main{
+        height: 800px;
+    }
+
+    #secSeta{
+        border: 0px solid #000;
+        margin-top: 130px;
+    }
+
+    #artSeção2{
+        border: 0px solid #000;
+        width: 80%;
+    }
+
+    #secMain1{
+        margin-left: 10%;
+    }
+}
+
+

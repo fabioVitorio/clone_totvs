@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#back{
+    background-image: url(img/banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------ HEADER -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+header{
+    border: 0px solid #000;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    justify-items: center;
+    top: 0;
+}
+
+.header.sticky{
+    background:#000;
+    height: 95px;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+#logo{
+    border: 0px solid #000;
+    width: 160px;
+    height: 50px;
+    background-image: url(img/logo.png);
+    background-size: 160px 50px;
+    margin: 20px 0px 0 14%;
+    float: left;
+}
+
+#ul{
+    border: 0px solid #000;
+    width: 520px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    margin: 0 0 0 35px;
+    position: relative;
+}
+
+
+ul > li > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul > li > a:hover{
+    color: rgb(219, 218, 218);
+}
+
+#a{
+    color: #fff;
+    margin-left: 35px;
+}
+
+#a:hover{
+    color: rgb(219, 218, 218);
+}
+
+ul > li > a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #feac0e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;   
+}
+
+ul > li > a:hover::after{
+    width: 100%;
+    filter: drop-shadow(0 0 0.2em #feac0e);
+}
+
+.dropdown{
+    text-decoration: none;
+}
+
+#dropDecoration:hover{
+    border-radius: 20px;
+    background-color: #feac0e;
+    transition: 0.3s ease-in-out;
+}
+
+h6{
+    color: #feac0e;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+
+#btnHeader{
+    width: 130px;
+    height: 30px;
+    float: right;
+    margin: 30px 200px 0 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 10pt;
+    background-color: #feac0e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btnHeader:hover{
+    background-color: #e2970a;
+    filter: drop-shadow(0 0 0.2em rgba(255, 255, 255, 0.829));
+}
+
+/* !!!!! INÍCIO MENU BARRA LATERAL !!!!! */
+#toggle {
+    display: none; /* aqui*/
+    width: 28px;
+    height: 30px;
+    margin: 40px auto 10px;
+    position: relative;
+}
+  
+#toggle span:after,
+#toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#toggle span:after{
+    top: 9px;
+}
+
+#toggle span {
+    position: relative;
+    display: block;
+}
+  
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+  
+#toggle.on span {
+    background-color: transparent;
+}
+
+#toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+}
+  
+#menu {
+    display: none; /* aqui*/
+    /* position: relative; */
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans";
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+#menu:after {
+    position: absolute;
+    top: -20px;
+    left: 155px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+#ulMenu, .liMenu, .a {
+    list-style: none;
+    display: none; /* aqui*/
+    margin: 0;
+    padding: 0;
+}
+
+.liMenu .a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.liMenu .a:hover,
+.liMenu .a:focus {
+    background: #00a0fd ;
+    color: #fff;
+}
+
+/* !!!!! FIM MENU BARRA LATERAL !!!!! */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- SEÇÃO 1 -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+#mainSeção1{
+    border: 1px solid transparent;
+    width: 90%;
+    height: 690px;
+    margin: 0 auto;
+    top: 0;
+}
+
+#secMain1{
+    border: 0px solid #000;
+    width: 685px;
+    height: 300px;
+    margin-left: 13%;
+    margin-top: 190px;
+}
+
+#titulo1{
+    font-family: 'Lato', sans-serif;
+    color: #feac0e;
+    font-size: 24pt;
+}
+
+#p1{
+    font-weight: 500;
+    font-size: 14pt;
+    color: #fff;
+    text-align: justify;
+}
+
+#secSeta{
+    border: 0px solid #000;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#svgSeção1{
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    transform: translatey(0px);
+    animation: flutuante 3s ease-in-out infinite;
+    transition: all 0.7s ease-in-out;
+    z-index: 0;
+}
+
+@keyframes flutuante{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-15px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+#svgSeção1:hover{
+    color: #feac0e;
+    filter: drop-shadow(0 0 1em #feac0e);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- SEÇÃO 2 -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+#mainSeção2{
+    height: auto;
+}
+
+#txtSeção2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#artSeção2{
+    border: 0px solid #000;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.secArt{
+    border: 0px solid #000;
+    width: 305px;
+    height: 200px;
+    float: left;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.secArt:hover{
+    scale: 1.08;
+}
+
+.h4Seção2{
+    text-align: center;
+    font-size: 14pt;
+    margin-top: 15px;
+    color: #e2970a;
+}
+
+.secArt:hover .h4Seção2{
+    color: #00a0fd;
+}
+
+.secArt:hover img{
+    filter: drop-shadow(0 0 0.3em #00a0fddc);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- SEÇÃO 3 -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+#mainSeção3{
+    border: 0px solid #000;
+    border-top: 1px solid rgb(224, 224, 224);
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: rgb(202, 202, 202);
+    gap: 30px;
+}
+
+#h3Seção3{
+    text-align: center;
+    margin-top: 70px;
+}
+
+#secPremio{
+    border: 0px solid #000;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#svgSeção3{
+    color: #00a0fd;
+    transition: all 0.5s ease-in-out;
+}
+
+#svgSeção3:hover{
+    color: #feac0e;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- SEÇÃO 4 -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+#mainSeção4{
+    border: 0px solid #000;
+    border-top: 1px solid rgb(224, 224, 224);
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-body{
+    background-color: rgb(243, 243, 243);
+}
+
+.card-title{
+    color: #00a0fd;
+    font-size: 18pt;
+}
+
+.card-text{
+    color: #000;
+    font-size: 13pt;
+}
+
+.btnSeção4{
+    width: 130px;
+    height: 30px;
+    margin: 30px 0px 0 55px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnSeção4:hover{
+    background-color: #fda706;
+    scale: 1.05 ;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- FOOTER -----------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+    border: 0px solid #000;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    position: absolute;
+}
+
+#logoFooter{
+    border: 0px solid #fff;
+    width: 160px;
+    height: 50px;
+    background-image: url(img/logo.png);
+    background-size: 160px 50px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#secIcons{
+    border: 0px solid #fff;
+    width: 70px;
+    display: flex;
+    padding: 0;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.icons{
+    color: #e2970a;
+    transition: all 0.4s ease-in-out;
+}
+
+.icons:hover{
+    color: #fff;
+    scale: 1.1;
+}
+
+#copy{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+
+
+
+
