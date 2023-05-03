@@ -2,6 +2,8 @@
 ✅Clone responsivo do site [totvs.com] com o intuito de aprendizagem
 <br>
 ✅Intuito de aprendizagem
+<br>
+✅Responsivo
 ##
 ![totvs](https://user-images.githubusercontent.com/109548564/196009432-5d42c84d-efec-44e0-a1e9-d343dc1a5056.PNG)
 ##
