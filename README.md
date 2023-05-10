@@ -1,9 +1,8 @@
 # ⚙️ *Clone da Totvs*
 
->✅Clone do site [totvs.com] <br>
->✅Intuito de aprendizagem <br>
+>✅FrontEnd <br>
 >✅Responsivo <br>
->✅FrontEnd
+>✅Flex-box
 
 <div>
   <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=fabioVitorio&repo=clone_totvs"/>
