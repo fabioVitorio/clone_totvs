@@ -1,4 +1,4 @@
-### <p align='center'> ![logoMental](https://github.com/fabioVitorio/clone_totvs/assets/109548564/6e430081-7a64-4ac9-aef2-347bb9e2c5c8) </p>
+### <p align='center'> <img src="https://github.com/fabioVitorio/clone_totvs/assets/109548564/6e430081-7a64-4ac9-aef2-347bb9e2c5c8" width="200"/> </p>
 <br>
 <p align='center'> Clone of the Totvs site with the purpose of learning and improving my skills
 <br></p>
